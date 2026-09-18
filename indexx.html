@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+            font: 20pt arial;
+        }
+    </style>
 </head>
 <body>
-    <SCRipt>
-        var nome = window.prompt(' qual e o seu nome')
-        document.write('seu ${nome}')
-    </SCRipt>
+   <h1>testando o DOM</h1>
+   <p id="oh">aprendendo usar <strong>dom</strong></p>
+   <p>aljdjjdjdjdjjdj</p>
+
+   <script>
+    var pra = window.document.getElementById('oh')
+    
+    pra.style.backgroundColor = 'green'
+   </script>
 </body>
 </html>
