@@ -5,21 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            background-color: aqua;
+       div#area{
+            background-color: rgb(28, 81, 1);
             font: 20pt arial;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+   
         }
     </style>
 </head>
 <body>
-   <h1>testando o DOM</h1>
-   <p id="oh">aprendendo usar <strong>dom</strong></p>
-   <p>aljdjjdjdjdjjdj</p>
-
+   <div id='area' onclick="clicar()" onmouseenter="entrou()" onmouseout="saiu()"> 
+    interaja...
+   </div>
+   
    <script>
-    var pra = window.document.getElementById('oh')
-    
-    pra.style.backgroundColor = 'green'
+     var a= window.document.getElementById('area')
+
+    function clicar(){
+    a.innerText ='clicou'
+    }
+
+    function entrou(){
+        a.innertext='entrou'
+        a.style.backgroundColor='red'
+    }
+
+    function saiu(){
+        a.innertext='saiu'
+        a.style.backgroundColor='green'
+    }
    </script>
 </body>
 </html>
