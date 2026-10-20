@@ -4,17 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div {
+            background-color: green;
+            height: 200px;
+            width: 200px;
+        }
+    </style>
 </head>
 <body>
     <div id = "oi">
-        <p>realizando testes do html</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur illum saepe modi? Accusantium vero explicabo facere omnis numquam maiores consequatur nemo cumque. Quam fuga sed omnis expedita ea eius laborum.</p>
+        interaja
+      
     </div>
 
     <script>
-    
-    var d = window.document.getElementById('oi')
-    d.innerText = "eu estou realizando um texte"      
+        var d = window.document.getElementById('oi')
+        d.addEventListener('click', clicar)
+        d.addEventListener('mouseenter', entrar)
+        d.addEventListener('mouseout', sair)
+
+        function clicar() {
+        d.style.backgroundColor = "blue"
+        d.innerText = ("clicou")
+        }
+        
+        function entrar() {
+            d.style.backgroundColor = "red"
+            d.innerText = ("entrou")
+        }
+
+        function sair() {
+            d.style.backgroundColor = "black"
+            d.innerText = ("saiu")
+            d.style.color = ("white")
+        }
+
+         
         
 
     </script>
