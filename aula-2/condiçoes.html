@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>consultador de velocidade</h1>
+
+    <div>
+        <p>digite sua velocidade</p>
+        <input type="number" name="velocidade" id="velocidade">
+        <input type="button" value="verificar" onclick= "calcular()">
+
+        <div id="res"></div>
+    <script>
+        function calcular() {
+            var txtv = window.document.querySelector("input#velocidade") // vai receber o input
+            
+            var res = document.querySelector("div#res") //receber a div do resultado
+            
+            var vel = Number(txtv.value)
+
+            res.innerHTML(`sua velocidade e de ${vel}`)
+        
+        }
+
+
+    </script>
+
+    </div>
+</body>
+</html>
