@@ -1,8 +1,8 @@
 function carregar () {
-    var msg = window.document.getElementById('img')
+    var msg = window.document.getElementById('msg')
     var img = window.document.getElementById('imagem')
     var data = new Date()
-    var hora = data.getHours
+    var hora = data.getHours()
 
     msg.innerHTML = `agora sao ${hora} hora`
     
@@ -14,6 +14,8 @@ function carregar () {
     } else {
         // boa noite
         img.src = 'fotonoite.png'
+        img.style.height = "400px"
+        img.style.width = "350px"
 
     }
 
