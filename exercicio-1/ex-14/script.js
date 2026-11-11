@@ -10,7 +10,8 @@ function carregar () {
         //bomdia
         img.src = 'fotomanha.png'
     } else if (hora >= 12 && hora < 18) {
-        //boa tarde
+        img.src = 'foto-tarde.png'
+        img.style.height = "400px"
     } else {
         // boa noite
         img.src = 'fotonoite.png'
