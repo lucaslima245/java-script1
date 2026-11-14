@@ -1,1 +1,3 @@
-alert("teste")
+function verificar() {
+
+}
