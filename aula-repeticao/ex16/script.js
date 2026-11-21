@@ -12,6 +12,9 @@ function verificar() {
         let f = Number(fim.value)
         let p = Number(passo.value)
 
+        if (p <= 0) {
+            window.alert("coloque um passo valido")
+        } else {
         if(i < f) {
             for(let c = i; c <= f; c+=p) {
             res.innerHTML += ` ${c} \u{1F449}`
@@ -23,5 +26,6 @@ function verificar() {
             }
         }
        res.innerHTML += ` ${c} \u{1F449}`
+        }
     }
 }
