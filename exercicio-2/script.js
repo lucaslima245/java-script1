@@ -7,25 +7,43 @@
     let valores = []
 
     function isnumero (n) {
-        if (number(n) >= 1 && number(n <= 100)){
+        if (Number(n) >= 1 && Number(n <= 100)){
             return true
         } else {
             return false
         }
     }
 
-    function inlista(n, 1) {
-        if (1.(num.value) != -1) {
-
+    function inlista(n, l) {
+        if(l.indexOf(Number(n)) != -1) {
+            return true
+        } else {
+            return false
         }
-        }
-
+    }
 
     function adicionar() {
-       if (isnumero(num.value) && !inlista(num.value))
-       {
+       if (isnumero(num.value) && !inlista(num.value, valores)) {
+            valores.push(Number(num.value))
+            let item = document.createElement("option")
+            item.text = `valor ${num.value} adicionado`
+            lista.appendChild(item)
+            res.innerHTML = ''
 
-       } else {
-        window.alert("o valor estar invalido ou ja encontrado na lista")
+    } else {
+            window.alert("o valor estar invalido ou ja encontrado na lista")
        }
+       num.value = ''
+       num.focus()
+    }
+
+    function finalizar() {
+        if (valores.length == 0) {
+           window.alert("adicione valores") 
+        } else{
+            let tot = valores.length
+            res.innerHTML = ''
+            res.innerHTML += `<p>ao todo, temos ${tot} numeros cadastrados </p>`
         }
+    }
+    
