@@ -14,7 +14,7 @@
         }
     }
 
-    function inlista(n, l) {
+    function inlista(n, l  ) {
         if(l.indexOf(Number(n)) != -1) {
             return true
         } else {
@@ -53,7 +53,8 @@
                 if (valores[pos] < menor)
                     menor = valores[pos]
             }
-
+             
+            media = soma/tot
             res.innerHTML = ''
             res.innerHTML += `<p>ao todo, temos ${tot} numeros cadastrados </p>`
             res.innerHTML +=`<p>o maior valor foi ${maior}</p>`
