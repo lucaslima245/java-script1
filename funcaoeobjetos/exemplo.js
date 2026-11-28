@@ -32,3 +32,11 @@ export const filmes = [
 export function buscarfilme(lista, id) {
     return lista.find((f) => f.id === id);
 }
+
+export function buscarnome(lista, titulo){
+    return lista.find((f) => f.titulo === titulo)
+}
+
+
+
+
